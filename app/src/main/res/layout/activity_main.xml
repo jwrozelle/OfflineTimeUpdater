@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:text="Tap 'GET GPS TIME' to start"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/pullTimebtn"
+        android:layout_width="300dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:text="Get GPS time"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="460dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.33"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/stopbtn"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_weight="0.33"-->
+<!--        android:text="Save"-->
+<!--        android:textSize="30dp"/>-->
+    <Button
+        android:id="@+id/setTimebtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.33"
+        android:text="Save to ODK"
+        android:textSize="30dp"/>
+
+</LinearLayout>
